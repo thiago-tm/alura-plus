@@ -89,9 +89,17 @@ grid-template-columns: 50% 50%;
     font-weight: 700;
     font-size: 48px;
     color: var(--cor-principal);
-    margin-bottom: 0.1rem;
+    margin-bottom: 1rem;
+
 }
 
 .descricao__texto{
     color: var(--cor-secundaria);
+    padding-right: 5rem;
 }
+
+.secundario__botao{
+    display: inline-block;
+    margin-top: 1rem;
+}
+
