@@ -103,3 +103,25 @@ grid-template-columns: 50% 50%;
     margin-top: 1rem;
 }
 
+.dispositivos{
+text-align: center;
+
+}
+
+.dispositivos__titulo{
+font-size: 48px;
+color: var(--cor-principal);
+}
+
+.dispositivos__lista{
+display: flex;
+justify-content: center;
+/*tira os pontinhos da lista*/
+list-style-type: none;
+margin: 5rem 0;
+}
+
+.lista__item{
+font-size: 32px;
+color: var(--cor-principal);
+}
