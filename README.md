@@ -48,13 +48,6 @@ Este repositório contém o projeto **Alura Plus**, desenvolvido como parte da f
 
 ---
 
-## 📌 Pré-requisitos
-
-Para acompanhar o projeto, é recomendável:
-- Conhecimento básico em HTML e CSS;
-- Ter feito a formação front-end da Alura (ou cursos equivalentes).
-
----
 
 ## 📚 Créditos
 
