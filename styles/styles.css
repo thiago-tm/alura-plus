@@ -1,172 +1,207 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 :root {
-    --cor-principal: #FFFFFF;
-    --cor-secundaria: #C0C0C0;
-    --cor-tercearia: #167BF7;
-    --cor-de-fundo: #00030C;
-    --fonte-principal: 'inter';
-    --botao-hover: #167bf7a6;
-    --botao-hover-secundario: #ffffffd0;    
+  --cor-principal: #ffffff;
+  --cor-secundaria: #c0c0c0;
+  --cor-tercearia: #167bf7;
+  --cor-de-fundo: #00030c;
+  --fonte-principal: "inter";
+  --botao-hover: #167bf7a6;
+  --botao-hover-secundario: #ffffffd0;
 }
 
-body{
-    background-color: var(--cor-de-fundo);
-    color: var(--cor-principal);
-    font-family: var(--fonte-principal);
-    font-size: 16px;
-    font-weight: 400;
+body {
+  background-color: var(--cor-de-fundo);
+  color: var(--cor-principal);
+  font-family: var(--fonte-principal);
+  font-size: 16px;
+  font-weight: 400;
 }
 
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
-.principal{
-    background-image: url("../assets/Background.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    align-items: center;
-    text-align: center;
+.principal {
+  background-image: url("../assets/Background.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  align-items: center;
+  text-align: center;
 }
 
-.container{
-height: 100vh;
-display: grid;
-grid-template-columns: 50% 50%;
+.container {
+  height: 80vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
 
-.container__botao{
-    background-color: var(--cor-tercearia);
-    border-radius: 8px;
-    padding: 1rem;
-    color: var(--cor-principal);
-    text-decoration: none;
-    display: block;
-    margin-bottom: 1rem;
-
+.container__botao {
+  background-color: var(--cor-tercearia);
+  border-radius: 8px;
+  padding: 1rem;
+  color: var(--cor-principal);
+  text-decoration: none;
+  display: block;
+  margin-bottom: 1rem;
 }
 
 .container__botao:hover {
-    background-color: var(--botao-hover);
+  background-color: var(--botao-hover);
 }
 
-.container__botao__secundario{
-    background-color: transparent;
-    border: 2px solid var(--cor-principal);
-    border-radius: 8px;
-    padding: 1rem;
-    color: var(--cor-principal);
-    text-decoration: none;
+.container__botao__secundario {
+  background-color: transparent;
+  border: 2px solid var(--cor-principal);
+  border-radius: 8px;
+  padding: 1rem;
+  color: var(--cor-principal);
+  text-decoration: none;
+  display: block;
+}
+
+.container__botao__secundario:hover {
+  background-color: var(--botao-hover-secundario);
+  color: var(--cor-de-fundo);
+}
+
+.container__aviso {
+  font-size: 12px;
+  color: var(--cor-secundaria);
+  padding: 1rem;
+}
+
+.container__titulo {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.container__imagem {
+  margin: 1rem 0 2rem 0;
+}
+
+.container__caixa {
+  margin: 0 6rem;
+}
+
+.imagem__secundaria {
+  width: 80%;
+}
+
+.secundario {
+  align-items: center;
+  margin: 10rem;
+}
+
+.descricao__titulo {
+  font-weight: 700;
+  font-size: 48px;
+  color: var(--cor-principal);
+  margin-bottom: 1rem;
+}
+
+.descricao__texto {
+  color: var(--cor-secundaria);
+  padding-right: 5rem;
+}
+
+.secundario__botao {
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.dispositivos {
+  text-align: center;
+}
+
+.dispositivos__titulo {
+  font-size: 48px;
+  color: var(--cor-principal);
+}
+
+.dispositivos__lista {
+  display: flex;
+  justify-content: center;
+  /*tira os pontinhos da lista*/
+  list-style-type: none;
+  margin: 5rem 0;
+}
+
+.lista__item {
+  font-size: 32px;
+  color: var(--cor-principal);
+}
+
+.rodape__logo {
+  margin: 2.5rem;
+}
+
+.rodape__lista {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.rodape {
+  text-align: center;
+}
+
+.lista__link {
+  margin-right: 1rem;
+}
+
+.lista__link a {
+  color: var(--cor-principal);
+  text-decoration: none;
+}
+
+.lista__link a:hover {
+  color: var(--cor-tercearia);
+}
+
+.rodape__texto {
+  color: var(--cor-secundaria);
+  text-align: center;
+  margin: 2rem;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+  .descricao__texto {
+    text-align: justify;
+    padding:2rem;
+  }
+
+  .container {
     display: block;
-} 
-
-.container__botao__secundario:hover{
-    background-color: var(--botao-hover-secundario);
-    color: var(--cor-de-fundo);
-    
-}
-
-.container__aviso{
-    font-size: 12px;
-    color: var(--cor-secundaria);
-    padding: 1rem;
-}
-
-.container__titulo{
-    font-size: 28px;
-    font-weight: 700;
-}
-
-.container__imagem{
-    margin: 1rem 0 2rem 0;
-}
-
-.container__caixa{
-    margin: 0 6rem;
-}
-
-.imagem__secundaria{
-    width: 80%;
-}
-
-.secundario{
-    align-items: center;
-    margin: 10rem;
-}
-
-.descricao__titulo{
-    font-weight: 700;
-    font-size: 48px;
-    color: var(--cor-principal);
-    margin-bottom: 1rem;
-
-}
-
-.descricao__texto{
-    color: var(--cor-secundaria);
-    padding-right: 5rem;
-}
-
-.secundario__botao{
-    display: inline-block;
-    margin-top: 1rem;
-}
-
-.dispositivos{
-text-align: center;
-
-}
-
-.dispositivos__titulo{
-font-size: 48px;
-color: var(--cor-principal);
-}
-
-.dispositivos__lista{
-display: flex;
-justify-content: center;
-/*tira os pontinhos da lista*/
-list-style-type: none;
-margin: 5rem 0;
-}
-
-.lista__item{
-font-size: 32px;
-color: var(--cor-principal);
-}
-
-.rodape__logo{
-    margin: 2.5rem;
-}
-
-.rodape__lista{
-display: flex;
-justify-content: center;
-list-style-type: none;
-}
-
-.rodape{
+    background-image: none;
     text-align: center;
-}
+  }
 
-.lista__link{
-    margin-right: 1rem;
-}
-
-.lista__link a{
-    color: var(--cor-principal);
-    text-decoration: none;
-}
-
-.lista__link a:hover{
-    color: var(--cor-tercearia);
-}
-
-.rodape__texto{
-    color: var(--cor-secundaria);
+  .secundario {
+    margin: 0;
     text-align: center;
-    margin: 2rem;
-    font-size: 14px;
+  }
+
+  .container__imagem {
+    width: 50vw;
+  }
+
+  .container__caixa {
+    /*primeiro valor: cima e baixo | segundo valor: direita e esquerda */
+    margin: 2rem 2rem;
+  }
+
+  .imagem__secundaria {
+    width: 50vw;
+  }
+
+  .dispositivos__lista {
+    display: block;
+  }
+
+  .rodape__lista {
+    display: block;
+  }
 }
