@@ -6,6 +6,8 @@
     --cor-tercearia: #167BF7;
     --cor-de-fundo: #00030C;
     --fonte-principal: 'inter';
+    --botao-hover: #167bf7a6;
+    --botao-hover-secundario: #ffffffd0;    
 }
 
 body{
@@ -46,6 +48,10 @@ grid-template-columns: 50% 50%;
 
 }
 
+.container__botao:hover {
+    background-color: var(--botao-hover);
+}
+
 .container__botao__secundario{
     background-color: transparent;
     border: 2px solid var(--cor-principal);
@@ -54,8 +60,13 @@ grid-template-columns: 50% 50%;
     color: var(--cor-principal);
     text-decoration: none;
     display: block;
-    
 } 
+
+.container__botao__secundario:hover{
+    background-color: var(--botao-hover-secundario);
+    color: var(--cor-de-fundo);
+    
+}
 
 .container__aviso{
     font-size: 12px;
@@ -124,4 +135,38 @@ margin: 5rem 0;
 .lista__item{
 font-size: 32px;
 color: var(--cor-principal);
+}
+
+.rodape__logo{
+    margin: 2.5rem;
+}
+
+.rodape__lista{
+display: flex;
+justify-content: center;
+list-style-type: none;
+}
+
+.rodape{
+    text-align: center;
+}
+
+.lista__link{
+    margin-right: 1rem;
+}
+
+.lista__link a{
+    color: var(--cor-principal);
+    text-decoration: none;
+}
+
+.lista__link a:hover{
+    color: var(--cor-tercearia);
+}
+
+.rodape__texto{
+    color: var(--cor-secundaria);
+    text-align: center;
+    margin: 2rem;
+    font-size: 14px;
 }
